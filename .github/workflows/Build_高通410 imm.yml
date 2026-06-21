@@ -29,7 +29,7 @@ on:
           - wf2
           - sp970v11
           - sp970v10
-        default: ufi003
+        default: ufi001c
         required: true
       upstream:
         description: ' ↓ 选择上游源码仓库 ↓ '
