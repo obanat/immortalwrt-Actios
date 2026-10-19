@@ -36,6 +36,7 @@ on:
         type: choice
         options:
           - lkiuyu/immortalwrt
+          - kennyhn88/immortalwrt
         default: lkiuyu/immortalwrt
         required: true
       custom_hash:
