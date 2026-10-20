@@ -9,6 +9,8 @@
 # 修改默认IP地址
 sed -i 's/192.168.1.1/192.168.88.1/g' package/base-files/files/bin/config_generate
 
+# 修改host name
+sed -i "s/hostname='ImmortalWrt'/hostname='4G-Dongle'/" package/base-files/files/bin/config_generate
 
 # 修改默认主题为 argon（路径不存在时跳过，不中断编译）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 2>/dev/null || true
