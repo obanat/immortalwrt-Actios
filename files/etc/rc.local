@@ -1,14 +1,4 @@
 # Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
-/etc/hotplug.d/iface/99-wwan-wifi-led watch
-
-/etc/init.d/gc restart
-sleep 25 && /etc/init.d/network restart
-
-sleep 3
-grep 0 /sys/kernel/debug/usb/ci_hdrc.0/device | grep speed
-if [ $? -eq 0 ]
-then
-echo host > /sys/kernel/debug/usb/ci_hdrc.0/role
-fi
+/etc/led.sh &
 exit 0
