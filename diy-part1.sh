@@ -25,6 +25,6 @@ echo 'src-git store https://github.com/linkease/istore.git;main' >> feeds.conf.d
 # sed -i 's|src-git-full openstick https://github.com/lkiuyu/openstick-feeds.git|src-git-full openstick https://github.com/xuxin1955/openstick-feeds|g' feeds.conf.default
 
 # 锁定feed到26年6月，配合主线代码锁定tag点，解决libffi编译报错问题
-sed -i 's|^src-git packages .*$|src-git packages https://git.openwrt.org/feed/packages.git^18e2b7d8b01165e6f21edca476a7280bd77eeea2|' feeds.conf.default
+# sed -i 's|^src-git packages .*$|src-git packages https://git.openwrt.org/feed/packages.git^18e2b7d8b01165e6f21edca476a7280bd77eeea2|' feeds.conf.default
 
 
