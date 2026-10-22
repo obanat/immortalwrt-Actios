@@ -13,7 +13,7 @@ sed -i 's/192.168.1.1/192.168.88.1/g' package/base-files/files/bin/config_genera
 sed -i "s/hostname='ImmortalWrt'/hostname='4G-Dongle'/" package/base-files/files/bin/config_generate
 
 # 修复bug，开机1分钟固定周期 modem掉线
-sed -i 's/^    repower_sim$/    #repower_sim/' openwrt/feeds/openstick/utils/qmi-modem-410-init/files/qmi-modem-410-init.sh
+## sed -i 's/^    repower_sim$/    #repower_sim/' openwrt/feeds/openstick/utils/qmi-modem-410-init/files/qmi-modem-410-init.sh
 
 # 修改默认主题为 argon（路径不存在时跳过，不中断编译）
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 2>/dev/null || true
